@@ -12,17 +12,18 @@
   rustup override set nightly-2023-02-01;
   rustup target add wasm32-unknown-unknown --toolchain nightly-2023-02-01;
 
+2) Выполнить cargo build --release
 
-(Пункты 2 и 3 выполнить в случае замены адресов метамаска в chain_spec.rs)
-
-2)Выполнить cargo build --release
-
-3)Выполнить:
+3) Выполнить:
   ./target/release/node-template purge-chain --base-path ./tmp/node01 --chain local_testnet;
   ./target/release/node-template build-spec --disable-default-bootnode --chain local_testnet > customSpec.json;
   ./target/release/node-template build-spec --chain=customSpec.json --raw --disable-default-bootnode > customSpecRaw.json;
 
-2)Запустить ноду командой:
+4)Если нужно заинсёртит друние ключи, это делается с помощью следующих команд:
+   для aura ./target/release/node-template key insert  --base-path ./tmp/node01  --chain customSpecRaw.json  --scheme Sr25519  --suri "<сури>"  --key-type "aura";
+   для grandpa ./target/release/node-template key insert  --base-path ./tmp/node01  --chain customSpecRaw.json  --scheme Ed25519  --suri "сури"  --key-type "gran";
+
+5) Запустить ноду командой:
 ./target/release/node-template \
   --base-path ./tmp/node01 \
   --keystore-path "./tmp/node01/chains/local_testnet/keystore" \
