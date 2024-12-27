@@ -19,7 +19,7 @@
   ./target/release/node-template build-spec --disable-default-bootnode --chain local_testnet > customSpec.json;
   ./target/release/node-template build-spec --chain=customSpec.json --raw --disable-default-bootnode > customSpecRaw.json;
 
-4)Если нужно заинсёртит друние ключи, это делается с помощью следующих команд:
+4) Если нужно заинсёртит друние ключи, это делается с помощью следующих команд:
    для aura ./target/release/node-template key insert  --base-path ./tmp/node01  --chain customSpecRaw.json  --scheme Sr25519  --suri "<сури>"  --key-type "aura";
    для grandpa ./target/release/node-template key insert  --base-path ./tmp/node01  --chain customSpecRaw.json  --scheme Ed25519  --suri "сури"  --key-type "gran";
 
