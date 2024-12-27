@@ -15,6 +15,7 @@
 2) Выполнить cargo build --release
 
 3) Выполнить:
+
   ./target/release/node-template purge-chain --base-path ./tmp/node01 --chain local_testnet;
   ./target/release/node-template build-spec --disable-default-bootnode --chain local_testnet > customSpec.json;
   ./target/release/node-template build-spec --chain=customSpec.json --raw --disable-default-bootnode > customSpecRaw.json;
