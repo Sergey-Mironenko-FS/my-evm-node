@@ -40,7 +40,7 @@ Secret phrase:       live smart tape caught sell decline knee file average accus
   Account ID:        0x19d86e38c784910ab80935d6688811858058cc8ab53cd85dcd0b051b6f2c0e09 <br>
   Public key (SS58): 5CebM7X4h3Fs88q9gJSTQYWwHag8QfxqwN6SobvSKKXp8GFU <br>
   SS58 Address:      5CebM7X4h3Fs88q9gJSTQYWwHag8QfxqwN6SobvSKKXp8GFU <br>
-
+<br>
 6) Запустить ноду командой: <br>
 ./target/release/node-template \
   --base-path ./tmp/node01 \
