@@ -20,10 +20,28 @@
   ./target/release/node-template build-spec --chain=customSpec.json --raw --disable-default-bootnode > customSpecRaw.json;
 
 4) Если нужно заинсёртит друние ключи, это делается с помощью следующих команд: 
-   для aura ./target/release/node-template key insert  --base-path ./tmp/node01  --chain customSpecRaw.json  --scheme Sr25519  --suri "<сури>"  --key-type "aura";
-   для grandpa ./target/release/node-template key insert  --base-path ./tmp/node01  --chain customSpecRaw.json  --scheme Ed25519  --suri "сури"  --key-type "gran";
+для aura ./target/release/node-template key insert  --base-path ./tmp/node01  --chain customSpecRaw.json  --scheme Sr25519  --suri "live smart tape caught sell decline knee file average accuse syrup family"  --key-type "aura"; 
+для grandpa ./target/release/node-template key insert  --base-path ./tmp/node01  --chain customSpecRaw.json  --scheme Ed25519  --suri "live smart tape caught sell decline knee file average accuse syrup family"  --key-type "gran";
 
-5) Запустить ноду командой: 
+Примеры ключей 
+Secret phrase:       live smart tape caught sell decline knee file average accuse syrup family 
+  Network ID:        substrate 
+  Secret seed:       0xbe245762c720569aea48f1976bd937f5b3c14b2d41e3857b23e1c8d6e89bca6c 
+  Public key (hex):  0xa08dcd654b785edbacf3de8a81022ec1d79ee4e9e226eaf8c3e0177370380256 
+  Account ID:        0xa08dcd654b785edbacf3de8a81022ec1d79ee4e9e226eaf8c3e0177370380256 
+  Public key (SS58): 5FhDeEeEVFJbrEcFKPGw8DG1eSStMYDgzWJhk6tgGHK2QSsb 
+  SS58 Address:      5FhDeEeEVFJbrEcFKPGw8DG1eSStMYDgzWJhk6tgGHK2QSsb 
+
+
+Secret phrase:       live smart tape caught sell decline knee file average accuse syrup family 
+  Network ID:        substrate 
+  Secret seed:       0xbe245762c720569aea48f1976bd937f5b3c14b2d41e3857b23e1c8d6e89bca6c 
+  Public key (hex):  0x19d86e38c784910ab80935d6688811858058cc8ab53cd85dcd0b051b6f2c0e09 
+  Account ID:        0x19d86e38c784910ab80935d6688811858058cc8ab53cd85dcd0b051b6f2c0e09 
+  Public key (SS58): 5CebM7X4h3Fs88q9gJSTQYWwHag8QfxqwN6SobvSKKXp8GFU 
+  SS58 Address:      5CebM7X4h3Fs88q9gJSTQYWwHag8QfxqwN6SobvSKKXp8GFU 
+
+6) Запустить ноду командой: 
 ./target/release/node-template \
   --base-path ./tmp/node01 \
   --keystore-path "./tmp/node01/chains/local_testnet/keystore" \
