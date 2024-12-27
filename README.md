@@ -7,7 +7,7 @@
 
 # Как поднять ноду локально
 
-1) Првести в соответствие версию rust с помощью уоманд: 
+1) Првести в соответствие версию rust с помощью команд: 
   rustup install nightly-2023-02-01; 
   rustup override set nightly-2023-02-01; 
   rustup target add wasm32-unknown-unknown --toolchain nightly-2023-02-01;
