@@ -182,9 +182,8 @@ fn testnet_genesis(
 			accounts: {		
 				let mut accounts = BTreeMap::new();
 
-				// Prefund the "Aboba" account 1 ETH
 				accounts.insert(
-					//Aboba addr 0xc22D1398dBD629A80aE75b7320c0d850e847D3b0
+					//Пример первого адреса 0xc22D1398dBD629A80aE75b7320c0d850e847D3b0
 					H160::from_str("c22D1398dBD629A80aE75b7320c0d850e847D3b0")
 						.expect("internal H160 is valid; qed"),
 					GenesisAccount {
@@ -196,9 +195,8 @@ fn testnet_genesis(
 					},
 				);
 
-				// Prefund the "Glek" account 100 ETH
 				accounts.insert(
-					// Новый адрес 0xB30B34CEB15DeC3C330D4A0BdBf14CB835220F73
+					// //Пример второго адреса 0xB30B34CEB15DeC3C330D4A0BdBf14CB835220F73
 					H160::from_str("B30B34CEB15DeC3C330D4A0BdBf14CB835220F73")
 						.expect("internal H160 is valid; qed"),
 					GenesisAccount {
